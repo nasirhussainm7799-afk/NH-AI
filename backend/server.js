@@ -2,7 +2,7 @@
 // NH AI Professional Backend
 // server.js
 // =======================================
-
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Import Libraries
 
