@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NH AI - Professional AI Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+
+<div class="brand">
+
+
+<div class="logo">
+
+NH
+
+</div>
+
+
+<div class="brand-text">
+
+
+<h1>
+
+NH AI
+
+</h1>
+
+
+<p>
+
+Intelligent Assistant
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<button class="new-chat-btn">
+
++ New Chat
+
+</button>
+
+
+
+
+
+<div class="sidebar-menu">
+
+
+<div class="menu-item active">
+
+Chat
+
+</div>
+
+
+<div class="menu-item">
+
+History
+
+</div>
+
+
+<div class="menu-item">
+
+Explore
+
+</div>
+
+
+<div class="menu-item">
+
+Settings
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="sidebar-footer">
+
+
+<p>
+
+NH AI v1.0
+
+</p>
+
+
+</div>
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+<!-- Main Section -->
+
+
+<main class="main-area">
+
+
+
+<header class="top-header">
+
+
+<div class="mobile-menu-btn">
+
+☰
+
+</div>
+
+
+
+
+<div class="header-info">
+
+
+<h2>
+
+NH AI
+
+</h2>
+
+
+<p>
+
+Your AI assistant
+
+</p>
+
+
+</div>
+
+
+
+
+
+<button class="theme-button">
+
+☼
+
+</button>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- Chat Area -->
+
+
+<section class="chat-area" id="chatArea">
+
+
+
+<div class="welcome-section">
+
+
+<div class="welcome-logo">
+
+NH
+
+</div>
+
+
+<h2>
+
+Welcome to NH AI
+
+</h2>
+
+
+<p>
+
+Ask questions, learn, create and solve problems.
+
+</p>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Input Area -->
+
+
+<footer class="input-section">
+
+
+
+<div class="input-container">
+
+
+<textarea
+
+id="messageInput"
+
+placeholder="Message NH AI..."
+
+></textarea>
+
+
+
+
+<button id="sendButton">
+
+Send
+
+</button>
+
+
+
+</div>
+
+
+
+<p class="disclaimer">
+
+NH AI may make mistakes. Verify important information.
+
+</p>
+
+
+
+</footer>
+<!-- Advanced Chat Layout -->
+
+
+<div class="chat-tools">
+
+
+<button class="tool-button">
+
+New Chat
+
+</button>
+
+
+<button class="tool-button">
+
+Clear
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Message Container -->
+
+
+<div class="messages-container" id="messagesContainer">
+
+
+
+<!-- User Message Template -->
+
+
+<div class="message user-message" hidden>
+
+
+<div class="avatar user-avatar">
+
+U
+
+</div>
+
+
+
+<div class="message-body">
+
+
+<div class="message-name">
+
+You
+
+</div>
+
+
+
+<div class="message-text">
+
+User message
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- AI Message Template -->
+
+
+<div class="message ai-message" hidden>
+
+
+<div class="avatar ai-avatar">
+
+NH
+
+</div>
+
+
+
+<div class="message-body">
+
+
+<div class="message-name">
+
+NH AI
+
+</div>
+
+
+
+<div class="message-text">
+
+AI response
+
+</div>
+
+
+
+
+
+<div class="message-actions">
+
+
+<button>
+
+Copy
+
+</button>
+
+
+
+<button>
+
+Regenerate
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- AI Features Section -->
+
+
+<section class="features-section">
+
+
+
+<div class="feature-card">
+
+
+<h3>
+
+AI Assistant
+
+</h3>
+
+
+<p>
+
+Answer questions and help with daily tasks.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+
+Coding Support
+
+</h3>
+
+
+<p>
+
+Programming help and technical guidance.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+
+Creative Writing
+
+</h3>
+
+
+<p>
+
+Stories, ideas and content creation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+
+Languages
+
+</h3>
+
+
+<p>
+
+English, Urdu and Sindhi support.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Settings Window -->
+
+
+<div class="settings-window" id="settingsWindow">
+
+
+<div class="settings-header">
+
+
+<h2>
+
+Settings
+
+</h2>
+
+
+
+<button class="close-settings">
+
+×
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="setting-row">
+
+
+<span>
+
+Theme
+
+</span>
+
+
+<button>
+
+Light
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="setting-row">
+
+
+<span>
+
+Language
+
+</span>
+
+
+<select>
+
+
+<option>
+
+English
+
+</option>
+
+
+<option>
+
+Urdu
+
+</option>
+
+
+<option>
+
+Sindhi
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+<div class="setting-row">
+
+
+<span>
+
+AI Version
+
+</span>
+
+
+<p>
+
+NH AI Pro
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Profile Section -->
+
+
+<div class="user-profile">
+
+
+<div class="profile-logo">
+
+NH
+
+</div>
+
+
+
+<div>
+
+
+<h3>
+
+NH AI User
+
+</h3>
+
+
+<p>
+
+Personal AI Experience
+
+</p>
+
+
+</div>
+
+
+</div>
+<!-- Extra AI Controls -->
+
+
+<div class="assistant-controls">
+
+
+<button class="control-button">
+
+📎 Attach
+
+</button>
+
+
+
+<button class="control-button">
+
+🎤 Voice
+
+</button>
+
+
+
+<button class="control-button">
+
+🌐 Language
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Suggested Prompts -->
+
+
+<section class="suggested-prompts">
+
+
+<h3>
+
+Try asking
+
+</h3>
+
+
+
+<div class="prompt-list">
+
+
+<button>
+
+Explain Artificial Intelligence
+
+</button>
+
+
+
+<button>
+
+Write a professional email
+
+</button>
+
+
+
+<button>
+
+Create a business idea
+
+</button>
+
+
+
+<button>
+
+Help me learn programming
+
+</button>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Founder Information -->
+
+
+<div class="nh-information" hidden>
+
+
+<div class="founder-name">
+
+Nasir Hussain
+
+</div>
+
+
+<div class="founder-description">
+
+
+NH AI was founded by Nasir Hussain.
+
+The project was created with the vision of building a modern AI assistant focused on intelligent conversations, learning, productivity and creative problem solving.
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Notification Component -->
+
+
+<div class="notification-box" id="notificationBox">
+
+
+<p>
+
+Welcome to NH AI
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Loading Component -->
+
+
+<div class="ai-loading" id="aiLoading">
+
+
+<div class="loading-dot"></div>
+
+
+<div class="loading-dot"></div>
+
+
+<div class="loading-dot"></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Error Component -->
+
+
+<div class="error-message" id="errorMessage">
+
+
+<p>
+
+Unable to process request. Please try again.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Confirmation Dialog -->
+
+
+<div class="confirmation-dialog" id="confirmationDialog">
+
+
+<div class="dialog-content">
+
+
+<h3>
+
+Clear chat?
+
+</h3>
+
+
+
+<p>
+
+All current messages will be removed.
+
+</p>
+
+
+
+<button>
+
+Cancel
+
+</button>
+
+
+
+<button>
+
+Confirm
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Accessibility Information -->
+
+
+<div class="accessibility-info" hidden>
+
+
+<p>
+
+NH AI supports keyboard navigation and accessible design.
+
+</p>
+
+
+</div>
+<!-- Application Footer -->
+
+
+<footer class="app-footer">
+
+
+<div class="footer-brand">
+
+
+<h3>
+
+NH AI
+
+</h3>
+
+
+<p>
+
+Professional Artificial Intelligence Assistant
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<a>
+
+Privacy
+
+</a>
+
+
+<a>
+
+Help
+
+</a>
+
+
+<a>
+
+About
+
+</a>
+
+
+</div>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- System Information -->
+
+
+<div class="system-info" hidden>
+
+
+<span id="aiName">
+
+NH AI
+
+</span>
+
+
+
+<span id="aiVersion">
+
+1.0
+
+</span>
+
+
+
+<span id="founder">
+
+Nasir Hussain
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- JavaScript File -->
+
+
+<script src="script.js"></script>
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
