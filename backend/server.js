@@ -332,6 +332,8 @@ console.log(
 `NH AI Backend running on port ${PORT}`
 
 );
-
+app.listen(5000, () => {
+  console.log("NH AI Server running on port 5000");
+});
 
 });
