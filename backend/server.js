@@ -4,6 +4,10 @@
 // =======================================
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
+dotenv.config();
+
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+
 // Import Libraries
 
 const express = require("express");
@@ -85,7 +89,34 @@ const NH_AI = {
 // Home Route
 
 
-app.get("/", (req,res)=>{
+app.post("/chat", async (req, res) => {
+
+    try {
+
+        const userMessage = req.body.message;
+
+        const model = genAI.getGenerativeModel({
+            model: "gemini-1.5-flash"
+        });
+
+        const result = await model.generateContent(userMessage);
+
+        const reply = result.response.text();
+
+        res.json({
+            reply: reply
+        });
+
+
+    } catch (error) {
+
+        res.json({
+            reply: "NH AI error: " + error.message
+        });
+
+    }
+
+});
 
 
     res.json({
